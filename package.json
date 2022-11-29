@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "proxy":"https://dropnshare.netlify.app",
   "scripts": {
     "dev": "nodemon server",
     "serve": "node server"
