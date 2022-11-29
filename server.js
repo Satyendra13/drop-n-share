@@ -20,7 +20,6 @@ const cors = require('cors');
 
 app.use(cors({
   origin: "https://dropnshare.netlify.app",
-  allowedHeaders: "Access-Control-Allow-Origin"
 }));
 app.use(express.static('public'));
 
