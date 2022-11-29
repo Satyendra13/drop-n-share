@@ -18,10 +18,7 @@ const cors = require('cors');
 //     "optionsSuccessStatus": 204
 //   }
 
-app.use(cors({
-  origin: ["https://drop-n-share.netlify.app", "https://dropnshare.netlify.app/"],
-  method: ["GET", "POST", "PUT"]
-}))
+app.use(cors());
 app.use(express.static('public'));
 
 const connectDB = require('./config/db');
