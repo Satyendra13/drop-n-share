@@ -19,7 +19,7 @@ const cors = require('cors');
 //   }
 
 app.use(cors({
-  origin: "https://dropnshare.netlify.app/" || "https://drop-n-share.netlify.app/api/files",
+  origin: "https://drop-n-share.netlify.app/",
   method: ["GET", "POST", "PUT"]
 }))
 app.use(express.static('public'));
