@@ -17,10 +17,10 @@ const cors = require('cors');
 //     "preflightContinue": false,
 //     "optionsSuccessStatus": 204
 //   }
-app.use(cors({
-  origin: "https://dropnshare.netlify.app",
+// app.use(cors({
+//   origin: "https://dropnshare.netlify.app",
   
-}));
+// }));
 app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', 'https://dropnshare.netlify.app');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
