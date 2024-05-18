@@ -21,7 +21,13 @@ const corsOptions = {
 //     "optionsSuccessStatus": 204
 //   }
 
-app.use(cors());
+app.use(
+	cors({
+		origin: "*", // You can specify the origin(s) you want to allow
+		methods: ["GET", "POST"],
+		allowedHeaders: ["Content-Type"],
+	})
+);
 app.use(express.static("public"));
 
 const connectDB = require("./config/db");
